@@ -239,10 +239,26 @@ body {
 }
 
 .popup iframe {
-    width: 80%;
-    height: 80%;
+    width: 80vw; /* 80% de la largeur de la fenêtre */
+    height: 45vw; /* 45% de la largeur de la fenêtre pour respecter le ratio 16:9 */
+    max-width: 1000px; /* Limite maximale pour écrans larges */
+    max-height: 563px; /* Limite maximale pour respecter le ratio 16:9 */
     border: 2px solid #00FF87; /* Bordure verte */
 }
+
+.popup .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%; /* Limite la largeur à 90% de l'écran */
+    max-height: 90%; /* Limite la hauteur à 90% de l'écran */
+    padding: 20px;
+    background: #000; /* Fond noir */
+    border-radius: 10px;
+    position: relative;
+}
+
+
 
 /* Footer Section */
 /* Footer */
