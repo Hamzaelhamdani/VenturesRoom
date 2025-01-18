@@ -335,3 +335,98 @@ body {
     text-align: center;
     margin-bottom: 5px; /* Réduit l'espacement au-dessous */
 }
+
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Header */
+    .nav ul {
+        flex-direction: column;
+        gap: 10px; /* Réduit l'espacement entre les liens */
+        text-align: center;
+    }
+    .nav ul li {
+        margin: 0; /* Supprime les marges */
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 36px; /* Taille réduite du titre */
+    }
+    .hero-content p {
+        font-size: 10px; /* Taille réduite du sous-titre */
+    }
+    .search-bar input {
+        width: 20%; /* Réduit la largeur de l'input */
+    }
+
+    /* Episodes Section */
+    .episodes-grid {
+        flex-direction: column; /* Les cartes sont empilées */
+        align-items: center; /* Centrer les cartes */
+    }
+    .episode-card {
+        width: 100%; /* S'adapte à la largeur de l'écran */
+    }
+
+    /* Footer */
+    .footer .container {
+        grid-template-columns: 1fr; /* Les sections sont empilées */
+        gap: 1px; /* Ajoute un espacement entre les sections */
+        text-align: center;
+    }
+
+    .footer .social-icons {
+        justify-content: center; /* Centre les icônes sous "Follow Us" */
+    }
+    .footer .social-icons li {
+        margin: 0 5px; /* Réduit les marges entre les icônes */
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    /* Header Logo */
+    .logo img {
+        height: 30px; /* Réduit la taille du logo */
+    }
+
+    /* Hero Section */
+    .hero-content h1 {
+        font-size: 24px; /* Réduit davantage la taille */
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%; /* S'ajuste entièrement à l'écran */
+    }
+
+    /* Footer */
+    .footer .container {
+        gap: 15px; /* Réduit l'espace entre les sections */
+    }
+
+    .footer .social-icons a img {
+        width: 24px; /* Taille des icônes réduite */
+        height: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Navigation Menu */
+    .nav ul {
+        flex-direction: row; /* Réactive l'alignement horizontal */
+        gap: 20px;
+    }
+
+    /* Episodes Section */
+    .episodes-grid {
+        grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    }
+
+    /* Footer */
+    .footer .container {
+        grid-template-columns: repeat(3, 1fr); /* Réactive les trois colonnes */
+    }
+}
