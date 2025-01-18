@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VenturesRoom</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/VenturesRoom.png" alt="VenturesRoom Logo">
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#startups">Startups</a></li>
+                    <li><a href="#episodes">Episodes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop id="videoBackground">
+            <source src="videos/videoback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Discover Innovative Startups</h1>
+            <p>Your gateway to groundbreaking technologies and inspiring startup stories.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for startups, solutions, or episodes">
+                <button>Explore</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Episodes Section -->
+    <section id="episodes" class="episodes">
+        <div class="container">
+            <h2>Our Episodes</h2>
+            <div class="episodes-grid">
+                <!-- Episode 1 -->
+                <div class="episode-card">
+                    <img src="images/episode1.png" alt="Episode 1">
+                    <div class="episode-content">
+                        <h3 class="episode-title">AEKE K1</h3>
+                        <p class="episode-pitch">Revolutionizing mobility with advanced AI technology.</p>
+                        <button class="episode-button" data-video="https://www.youtube.com/embed/prqcRuotKwA">Watch Episode</button>
+                    </div>
+                </div>
+                <!-- Episode 2 -->
+                <div class="episode-card">
+                    <img src="images/episode2.png" alt="Episode 2">
+                    <div class="episode-content">
+                        <h3 class="episode-title">InnoEnergy</h3>
+                        <p class="episode-pitch">Green energy reimagined for modern living.</p>
+                        <button class="episode-button" data-video="https://www.youtube.com/embed/prqcRuotKwA">Watch Episode</button>
+                    </div>
+                </div>
+                <!-- Episode 3 -->
+                <div class="episode-card">
+                    <img src="images/episode3.png" alt="Episode 3">
+                    <div class="episode-content">
+                        <h3 class="episode-title">InnoEnergy</h3>
+                        <p class="episode-pitch">Green energy reimagined for modern living.</p>
+                        <button class="episode-button" data-video="https://www.youtube.com/embed/prqcRuotKwA">Watch Episode</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup -->
+    <div class="popup">
+        <span class="close">&times;</span> <!-- Bouton fermer -->
+        <iframe width="80%" height="80%" allowfullscreen></iframe>
+    </div>
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="container">
+            <!-- About Section -->
+            <div class="about">
+                <h3>VenturesRoom</h3>
+                <p>Your gateway to discovering innovative startups and groundbreaking technologies.</p>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#startups">Startups</a></li>
+                    <li><a href="#episodes">Episodes</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media Section -->
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a></li>
+                    <li><a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn"></a></li>
+                    <li><a href="#"><img src="images/tiktok-icon.png" alt="TikTok"></a></li>
+                </ul>
+            </div>
+
+        </div>
+    
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 VenturesRoom. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+
+    <!-- JS File -->
+    <script src="scripts.js"></script>
+</body>
+</html>
